@@ -4187,7 +4187,7 @@ var Gitment = function () {
           desc = this.desc,
           labels = this.labels;
 
-
+	console.log('产出的ID为：'+id);
       return _utils.http.post('/repos/' + owner + '/' + repo + '/issues', {
         title: title,
         labels: labels.concat(['gitment', id]),
